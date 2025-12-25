@@ -74,7 +74,7 @@ export function parseHtml(html: string, url: string): ParsedMetaData {
   const openGraph = extractOpenGraph(doc);
   const twitter = extractTwitterCard(doc);
   const meta = extractMeta(doc);
-  const technical = extractTechnicalChecks(doc, html, url);
+  const technical = extractTechnicalChecks(doc, url);
   const suggestions = generateSuggestions(openGraph, twitter, meta, technical);
 
   return {
@@ -145,7 +145,7 @@ function extractMeta(doc: Document): MetaData {
   };
 }
 
-function extractTechnicalChecks(doc: Document, html: string, url: string): TechnicalChecks {
+function extractTechnicalChecks(doc: Document, url: string): TechnicalChecks {
   const faviconEl = doc.querySelector('link[rel="icon"], link[rel="shortcut icon"]');
   const charsetEl = doc.querySelector("meta[charset]");
   const viewportEl = doc.querySelector('meta[name="viewport"]');
