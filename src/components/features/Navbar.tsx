@@ -9,7 +9,7 @@ function GitHubStars() {
   useEffect(() => {
     const fetchStars = async () => {
       try {
-        const res = await fetch('https://api.github.com/repos/tirthh18/og');
+        const res = await fetch('https://api.github.com/repos/TirthDhandhukia30/metacheck');
         if (res.ok) setStars((await res.json()).stargazers_count);
       } catch {
         // Silently fail
@@ -26,7 +26,7 @@ function GitHubStars() {
   return (
     <div className="relative">
       <a
-        href="https://github.com/tirthh18/og"
+        href="https://github.com/TirthDhandhukia30/metacheck"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-muted hover:bg-muted/80 transition-all text-foreground"

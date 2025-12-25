@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://metacheck.vercel.app/sitemap.xml

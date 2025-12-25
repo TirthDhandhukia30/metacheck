@@ -2,7 +2,7 @@
 
 **MetaCheck** is a modern, developer-friendly tool for previewing and analyzing Open Graph meta tags. Ensure your content looks perfect across social media platforms with real-time previews and actionable SEO insights.
 
-![MetaCheck Preview](./assets/preview.png)
+![MetaCheck Preview](public/preview.png)
 
 ## ✨ Features
 

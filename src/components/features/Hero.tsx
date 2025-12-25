@@ -45,7 +45,7 @@ export function Hero({ onSubmit, isLoading, isHidden }: HeroProps) {
     <section className="min-h-[calc(100vh-56px)] mt-14 flex items-center justify-center px-6">
       <div className="w-full max-w-2xl mx-auto text-center -mt-20">
         {/* Main Headline */}
-        <div className="mb-6 flex flex-wrap justify-center items-center gap-x-2 gap-y-1">
+        <h1 className="mb-6 flex flex-wrap justify-center items-center gap-x-2 gap-y-1">
           <PointerHighlight
             containerClassName=""
             rectangleClassName="rounded-lg border-foreground/20 bg-muted/30"
@@ -58,7 +58,7 @@ export function Hero({ onSubmit, isLoading, isHidden }: HeroProps) {
           <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground tracking-tight">
             previews made simple.
           </span>
-        </div>
+        </h1>
 
         {/* Subheadline */}
         <motion.p
